@@ -588,8 +588,8 @@ a:hover {
   color: #dfd9c6;
 }
 /* Scroll to top button*/
-#scrollToTop a {
-  border-radius: 100px;
+.scrollToTop_wraper {
+  display: none;
 }
 #scrollToTop a i:before {
   content: '';
@@ -2025,7 +2025,7 @@ body {
 .cid-rm70EpEyrh {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #232323;
+  background-color: #393434;
 }
 .cid-rm70EpEyrh .line {
   background-color: #ffffff;
@@ -2048,7 +2048,7 @@ body {
 .cid-rm79uxoRJd {
   padding-top: 30px;
   padding-bottom: 105px;
-  background-image: url("../../../assets/images/descrizione-3-845x500.jpg");
+  background-color: #ffffff;
 }
 .cid-rm79uxoRJd P {
   color: #767676;
@@ -2091,7 +2091,4 @@ body {
 }
 .cid-rm7abrc9Ne .mbr-section-subtitle B {
   color: #232323;
-}
-.cid-rmYFcEzxx4 {
-  background-image: url("../../../assets/images/background4.jpg");
 }
