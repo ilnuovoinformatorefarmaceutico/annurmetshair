@@ -1,0 +1,604 @@
+{
+  "settings": {
+    "name": "Site-03-28_2012",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#f47b18",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": 4.25,
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": true,
+        "isScrollToTopButton": true
+      },
+      "additionalSetColors": [
+        "#f47b18",
+        "#f50b0b",
+        "#f49b52",
+        "#c16921",
+        "#cc6223",
+        "#f6f2c2"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "4.9.5",
+    "siteFonts": [],
+    "uniqCompNum": 19,
+    "versionPublish": "4.9.5",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "SPAN": {
+              "color": "#232323"
+            },
+            "I": {
+              "color": "#232323"
+            },
+            "H3": {
+              "color": "#232323"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#c16921"
+            },
+            ".mbr-text, .mbr-section-btn B": {
+              "color": "#232323"
+            }
+          },
+          "_name": "header1",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Schermo intero\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Mostra titolo\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Mostra sottotitoli\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Mostra Testo\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Mostra pulsanti\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Immagine di sfondo\" value=\"@PROJECT_PATH@/assets/images/above-annurmets-1-1237x850.jpg\" parallax selected>\n            <input type=\"color\" title=\"Colore di sfondo\" value=\"#7f1933\">\n            <input type=\"video\" title=\"Video di sfondo\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Sovrapponi\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Colore sovrapposto\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacità\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><span style=\"font-weight: normal;\">\n                    LA CADUTA DEI CAPELLI TI FA SENTIRE MENO BELLA?</span></h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\"><b>\n                    PROVA ANNURMETS <i>hair</i></b></h3>\n                <p class=\"mbr-text align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>BELLEZZA SICUREZZA E PROTEZIONE</b></p>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-secondary\" href=\"index.html#content6-3\" data-app-placeholder=\"Type Text\"><span class=\"mbri-protect mbr-iconfont mbr-iconfont-btn\" style=\"font-size: 40px; color: rgb(255, 255, 255);\"></span>\n                        IL RIMEDIO NATURALE E CERTIFICATO</a></div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "rm2GTwBc80",
+          "_anchor": "header1-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#f47b18"
+            },
+            "H2": {
+              "color": "#f50b0b"
+            },
+            "B": {
+              "color": "#232323"
+            },
+            ".mbr-section-subtitle B": {
+              "color": "#f47b18"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\n        <input type=\"checkbox\" title=\"Mostra titolo\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Mostra sottotitoli\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Mostra pulsanti\" name=\"showButtons\">\n        <input type=\"color\" title=\"Colore di sfondo\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\"><b>\n                    COS'É ANNURMETS <i>hair</i></b></h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\"><b>LA MELANNURCA CAMPANA IGP RAPPRESENTA UN VERO E PROPRIO CONCENTRATO DI BENESSERE</b></h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.co\">PER SAPERNE DI PIÙ</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.co\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rm6casLjqB",
+          "_anchor": "content4-4",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "& when not (@reverseContent)": {
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-right": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".mbr-figure": {
+                  "padding-bottom": "1rem"
+                }
+              }
+            },
+            "& when (@reverseContent)": {
+              ".media-container-row": {
+                "flex-direction": "row-reverse",
+                "-webkit-flex-direction": "row-reverse"
+              },
+              "@media (min-width: 992px)": {
+                ".mbr-figure": {
+                  "padding-left": "4rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".media-container-row": {
+                  "flex-wrap": "wrap-reverse",
+                  "-webkit-flex-wrap": "wrap-reverse"
+                },
+                ".mbr-figure": {
+                  "padding-top": "1rem"
+                }
+              }
+            },
+            ".mbr-text": {
+              "color": "#232323",
+              "text-align": "center"
+            }
+          },
+          "_name": "content6",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n      <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n\n      <input type=\"range\" inline title=\"Dimensione dei Media\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"125\">\n        <input type=\"checkbox\" title=\"Text On Right/Left\" name=\"reverseContent\">  \n      <input type=\"color\" title=\"Colore di sfondo\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <img src=\"@PROJECT_PATH@/assets/images/annurmets-hair-436x316.png\" alt=\"Mobirise\" title>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"><b>AnnurMets Hair</b> è il nuovo prodotto nutraceutico in compresse,&nbsp;a base di estratto procianidinico di Melannurca Campana IGP (AnnurtriComplex), sostanza funzionale capace di mantenere il bulbo pilifero in attività, contrastando la caduta dei capelli e aiutando la ricrescita.<br></p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rm68lF72Bw",
+          "_anchor": "content6-3",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "H1": {
+              "color": "#232323"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#f47b18"
+            }
+          },
+          "_name": "header1",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Schermo intero\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Mostra titolo\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Mostra sottotitoli\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Mostra Testo\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Mostra pulsanti\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Immagine di sfondo\" value=\"@PROJECT_PATH@/assets/images/tecniche-analitiche-720x409.png\" parallax selected>\n            <input type=\"color\" title=\"Colore di sfondo\" value=\"#7f1933\">\n            <input type=\"video\" title=\"Video di sfondo\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Sovrapponi\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Colore sovrapposto\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacità\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">PERCHÉ SCEGLIERE ANNURMETS <i>hair</i></h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Bellissimi siti web mobile\n                </h3>\n                <p class=\"mbr-text align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>\n                    QUALITÁ ED EFFICACIA CERTIFICATA DAGLI STUDI E DALLE RICERCHE DEL DIPARTIMENTO DI FARMACIA DELL' UNIVERSITÁ FEDERICO II DI NAPOLI</b></p>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-secondary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">\n                        <span class=\"mbr-iconfont mbri-file\"></span>PER SAPERNE DI PIÙ</a></div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "rm6kdnCABQ",
+          "_anchor": "header1-6",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content8",
+          "_customHTML": "<section class=\"mbr-section content8\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Colore di sfondo\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row title\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-7\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-secondary\" href=\"index.html#features3-8\" data-app-placeholder=\"Type Text\"><span class=\"mbri-preview mbr-iconfont mbr-iconfont-btn\" style=\"font-size: 40px; color: rgb(255, 255, 255);\"></span>TRE BUONI MOTIVI PER ORDINARLO</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rm6mjB2BT8",
+          "_anchor": "content8-7",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card-box": {
+              "padding": "0 2rem"
+            },
+            ".mbr-section-btn": {
+              "padding-top": "1rem",
+              "a": {
+                "margin-top": "1rem",
+                "margin-bottom": "0"
+              }
+            },
+            "h4": {
+              "font-weight": "500",
+              "margin-bottom": "0",
+              "text-align": "left",
+              "padding-top": "2rem"
+            },
+            "p": {
+              "margin-bottom": "0",
+              "text-align": "left",
+              "padding-top": "1.5rem",
+              "& when not (@showTitle)": {
+                "padding-top": "2rem"
+              }
+            },
+            ".mbr-text": {
+              "color": "#232323",
+              "text-align": "center"
+            },
+            ".card-wrapper": {
+              "height": "100%",
+              "padding-bottom": "2rem",
+              "background": "@cardsBg",
+              "box-shadow": "0px 0px 0px 0px rgba(0, 0, 0, 0)",
+              "transition": "box-shadow 0.3s",
+              "& when not (@showTitle)": {
+                "& when not (@showText)": {
+                  "& when not (@showButtons)": {
+                    "padding-bottom": "0"
+                  }
+                }
+              },
+              "&:hover": {
+                "box-shadow": "0px 0px 30px 0px rgba(0, 0, 0, 0.05)",
+                "transition": "box-shadow 0.3s"
+              }
+            },
+            ".card-title": {
+              "text-align": "center",
+              "color": "#f47b18"
+            }
+          },
+          "_name": "features3",
+          "_customHTML": "<section class=\"features3\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n\n        <input type=\"checkbox\" title=\"Mostra titolo\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Mostra Testo\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Mostra pulsanti\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Cards Bg\" name=\"cardsBg\" value=\"#ffffff\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Immagine di sfondo\" value=\"../_images/background5.jpg\" parallax>\n            <input type=\"color\" title=\"Colore di sfondo\" value=\"#efefef\" selected>\n            <input type=\"video\" title=\"Video di sfondo\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Sovrapponi\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Colore sovrapposto\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacità\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"media-container-row\" mbr-cards=\"bootstrap\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/efficace-1-600x300.jpg\" alt=\"Mobirise\" title>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            EFFICACE</h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Il principio attivo di&nbsp;<b>ANNURMETS HAIR&nbsp;</b>secondo i test clinici effettuati, i cui risultati sono stati pubblicati nel 2017 sulla rivista scientifica Journal of Medicinal Food, &nbsp;si è dimostrato efficace nel favorire <b>il rinfoltimento</b> e nel <b>ridurre efficacemente</b> il diradamento<b> </b>dei capelli\n                        </p>\n                    </div>\n                    <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn text-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a href=\"index.html#form1-h\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\">\n                            ORDINA ORA -40%</a></div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/sicuro-2-676x285.jpg\" alt=\"Mobirise\" title>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            SICURO ED ECONOMICO</h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Indicato <b>sia per donne sia per uomini,</b> aiuta a promuovere la <b>vitalità</b> dei capelli, ne migliora la <b>forza, la luminosità e la pigmentazione,</b> senza gli indesiderabili effetti collaterali dei farmaci e senza ricorrere a tecniche costose alternative. Il prodotto non contiene nè glutine nè lattosio.</p>\n                    </div>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn text-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a href=\"index.html#form1-h\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\">\n                            ORDINA ORA -40%</a></div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/rapidpo-1-626x417.jpg\" alt=\"Mobirise\" title>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            RAPIDO</h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Il principio attivo di <b>ANNURMETS HAIR</b> ha dimostrato la sua grande capacità nel mantenere in attività il bulbo pilifero e nel promuovere la formazione di cheratina ad alto peso molecolare tanto da intravedere i primi risultati nell' arco di qualche mese&nbsp;</p>\n                    </div>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn text-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a href=\"index.html#form1-h\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\">\n                            ORDINA ORA -40%</a></div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 col-lg-3\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"../_images/background4.jpg\" alt=\"Mobirise\">\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Siti illimitati\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                           Mobirise ti dà la libertà di sviluppare tutti i siti che desideri dato che si tratta di un'applicazione desktop.\n                        </p>\n                    </div>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn text-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                        <a href=\"https://mobirise.co\" class=\"btn btn-primary\">\n                            Per saperne di più\n                        </a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rm6niMWmD4",
+          "_anchor": "features3-8",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n\n        <input type=\"checkbox\" title=\"Mostra titolo\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Mostra sottotitoli\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Mostra pulsanti\" name=\"showButtons\">\n        <input type=\"color\" title=\"Colore di sfondo\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\"><b>\n                    COME FUNZIONA ANNURMETS <i>hair</i></b></h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                    Modella il tuo futuro progetto web con un design accattivante e perfeziona le funzioni codificate.\n                </h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.co\">PER SAPERNE DI PIÙ</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.co\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rm6Ovw1lUj",
+          "_anchor": "content4-d",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text, blockquote": {
+              "color": "#767676"
+            },
+            "B": {
+              "color": "#f47b18"
+            },
+            "DIV": {
+              "text-align": "center"
+            }
+          },
+          "_name": "content2",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Colore di sfondo\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-multiline mbr-article>\n                <blockquote><b>Le ricerche hanno dimostrato che la Procianidina B2 si trova in alte concentrazioni soprattutto in una particolare varietà di mele, la Melannurca Campana Igp. Dopo un attento studio in vitro condotto su cellule cheratiniche umane HaCaT, è stato dimostrato che l’estratto procianidinico di Annurca favorisce un aumento dell’espressione della cheratina e di prolungare la fase di crescita del capello (fase anagen)</b></blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rm6OmKe3lt",
+          "_anchor": "content2-b",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#f50b0b"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n\n        <input type=\"checkbox\" title=\"Mostra titolo\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Mostra sottotitoli\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Mostra pulsanti\" name=\"showButtons\">\n        <input type=\"color\" title=\"Colore di sfondo\" name=\"bgColor\" value=\"#f6f2c2\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\"><b>SOLUZIONE COMPLETA PER TUTTE LE ESIGENZE</b></h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\"><b>AnnurMets hair è disponibile anche come lozione arricchito con biotina e pantenolo</b></h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.co\">PER SAPERNE DI PIÙ</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.co\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rm6zn3SDGw",
+          "_anchor": "content4-9",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "background": "@bgColor",
+            "& when (@fullWidth = false)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@gradientBg)": {
+              "background": "linear-gradient(45deg, @bgColor, @color2)"
+            },
+            ".image-block": {
+              "margin": "auto",
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            ".mbr-figure": {
+              "margin": "0 auto"
+            },
+            "figcaption": {
+              "position": "relative",
+              "div": {
+                "position": "absolute",
+                "bottom": "0",
+                "width": "100%"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".image-block": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "image2",
+          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Intera larghezza\" name=\"fullWidth\" checked>\n\n        <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"checkbox\" title=\"Mostra Testo\" name=\"showText\">        \n        \n        <input type=\"range\" inline title=\"Larghezza\" name=\"imageSize\" min=\"20\" max=\"100\" value=\"100\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"color\" title=\"Colore di sfondo\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth==false\">\n        <input type=\"checkbox\" title=\"Sfumatura\" name=\"gradientBg\" condition=\"fullWidth==false\">\n        <input type=\"color\" title=\"Colore 2\" name=\"color2\" value=\"#149dcc\" condition=\"gradientBg && fullWidth==false\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <figure class=\"mbr-figure\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"image-block\" mbr-style=\"{'width':imageSize+'%'}\">\n            <img src=\"@PROJECT_PATH@/assets/images/tutto-apple-2000x1111.jpg\" alt=\"Mobirise\" title>\n            <figcaption class=\"mbr-figure-caption mbr-figure-caption-over\" mbr-if=\"showText\">\n                <div mbr-text class=\"pb-5 px-3 mbr-white align-center mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-figure-caption div\">\n                    Crea fantastici siti web!\n                </div>\n            </figcaption>\n        </div>\n    </figure>\n</section>",
+          "_cid": "rm6AqRe1x0",
+          "_anchor": "image2-a",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".media-container-row": {
+              "-webkit-flex-wrap": "wrap",
+              "-ms-flex-wrap": "wrap",
+              "flex-wrap": "wrap"
+            },
+            ".mbr-text": {
+              "color": "#767676"
+            },
+            ".mbr-author-desc": {
+              "display": "block",
+              "color": "#465052"
+            },
+            ".mbr-author-name": {
+              "color": "#465052"
+            },
+            ".mbr-testimonial": {
+              ".panel-item": {
+                "background-color": "@cardsColor"
+              },
+              ".card-block": {
+                "-webkit-flex-grow": "0",
+                "flex-grow": "0",
+                "padding": "2.4rem 2.4rem 0 2.4rem",
+                ".testimonial-photo": {
+                  "display": "inline-block",
+                  "width": "120px",
+                  "height": "120px",
+                  "margin-bottom": "1.6rem",
+                  "overflow": "hidden",
+                  "border-radius": "50%",
+                  "img": {
+                    "width": "100%",
+                    "min-width": "100%",
+                    "min-height": "100%"
+                  }
+                }
+              },
+              ".card-footer": {
+                "padding-bottom": "2.4rem",
+                "border-top": "0",
+                "padding-top": "1rem",
+                "word-wrap": "break-word",
+                "word-break": "break-word",
+                "background": "none"
+              }
+            },
+            "@media (max-width: 300px)": {
+              ".testimonial-photo": {
+                "width": "100% !important",
+                "height": "auto !important"
+              }
+            },
+            ".mbr-text I": {
+              "color": "#465052"
+            }
+          },
+          "_name": "testimonials1",
+          "_customHTML": "<section class=\"testimonials1\" group=\"Testimonials\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n     <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n\n        <input type=\"checkbox\" title=\"Mostra titolo\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Mostra sottotitoli\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Mostra immagini\" name=\"showImages\" checked>\n        <input type=\"checkbox\" title=\"Mostra nome\" name=\"showName\" checked>\n        <input type=\"checkbox\" title=\"Mostra biografia\" name=\"showBio\" checked>\n\n        <input type=\"color\" title=\"Colore card\" name=\"cardsColor\" value=\"#ffffff\">\n        <select title=\"Conta cards\" name=\"TestimonialsCount\">\n         <option value=\"1\">1</option>\n         <option value=\"2\">2</option>\n         <option value=\"3\" selected>3</option>\n         <option value=\"4\">4</option>\n         <option value=\"5\">5</option>\n         <option value=\"6\">6</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Immagine di sfondo\" value=\"../_images/background2.jpg\">\n            <input type=\"color\" title=\"Colore di sfondo\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video di sfondo\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Sovrapponi\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Colore sovrapposto\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacità\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\"> \n    <!-- End block parameters --> \n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 align-center\">\n                <h2 class=\"pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><b>\n                    CHI USA ANNURMETS <i>hair</i> DICE</b></h2>\n                <h3 class=\"mbr-section-subtitle mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                    TESTIMONIANZE DI&nbsp;</h3>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"container pt-3 mt-2\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-testimonial p-3 align-center col-12 col-md-6\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\">\n                <div class=\"panel-item p-3\">\n                    <div class=\"card-block\">\n                        <div class=\"testimonial-photo\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/2testim-legg-240x240.jpg\" alt title>\n                        </div>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"><i>\n                           Mi accorgo che sta cambiando stagione dai miei capelli. Cominciano a cadere e me li ritrovo dappertutto. Da quando sto usando Annurmets hair integratore, i capelli si sono rinforzati e spazzolarli è diventato un piacere!<br>Lo consiglio!&nbsp;</i></p>\n                    </div>\n                    <div class=\"card-footer\">\n                        <div class=\"mbr-author-name mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".mbr-author-name\" mbr-text>\n                             Anna</div>\n                        <small class=\"mbr-author-desc mbr-italic mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showBio\" data-app-selector=\".mbr-author-desc\" mbr-text>\n                               32 anni</small>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"mbr-testimonial p-3 align-center col-12 col-md-6\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\" mbr-if=\"TestimonialsCount>1\">\n                <div class=\"panel-item p-3\">\n                    <div class=\"card-block\">\n                        <div class=\"testimonial-photo\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/1test-legg-240x240.jpg\" alt title>\n                        </div>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"><i>\n                           Soffro di alopecia areata, sopratutto in condizioni particolari, come stress e ansia. Avevo provato tutto: shampi, vari integratori e varie lozioni. Solo Annurmets hair integratore, ha ridato vitalità e luminosità ai miei capelli rinforzandoli. Soddisfatta!</i></p>\n                    </div>\n                    <div class=\"card-footer\">\n                        <div class=\"mbr-author-name mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".mbr-author-name\" mbr-text>\n                             Claudia</div>\n                        <small class=\"mbr-author-desc mbr-italic mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showBio\" data-app-selector=\".mbr-author-desc\" mbr-text>40 anni</small>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"mbr-testimonial p-3 align-center col-12 col-md-6\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\" mbr-if=\"TestimonialsCount>2\">\n                <div class=\"panel-item p-3\">\n                    <div class=\"card-block\">\n                        <div class=\"testimonial-photo\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/arnica-uomo-240x240.jpg\" alt title>\n                        </div>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"><i>\n                           Ora che sto usando Annurmets hair la chioma è totalmente rinfoltita. Uso la lozione semplicemente perchè non riesco ad ingoiare le pillole. E' profumata ed è piacevole massaggiarsi la testa la sera. Molto soddisfatto!</i></p>\n                    </div>\n                    <div class=\"card-footer\">\n                        <div class=\"mbr-author-name mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".mbr-author-name\" mbr-text>\n                             Mario</div>\n                        <small class=\"mbr-author-desc mbr-italic mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showBio\" data-app-selector=\".mbr-author-desc\" mbr-text>\n                               37 anni</small>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"mbr-testimonial p-3 align-center col-12 col-md-6\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\" mbr-if=\"TestimonialsCount>3\">\n                <div class=\"panel-item p-3\">\n                    <div class=\"card-block\">\n                        <div class=\"testimonial-photo\" mbr-if=\"showImages\">\n                            <img src=\"../_images/face2.jpg\">\n                        </div>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, aspernatur, voluptatibus, atque, tempore molestiae.\n                        </p>\n                    </div>\n                    <div class=\"card-footer\">\n                        <div class=\"mbr-author-name mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".mbr-author-name\" mbr-text>\n                             John Smith\n                        </div>\n                        <small class=\"mbr-author-desc mbr-italic mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showBio\" data-app-selector=\".mbr-author-desc\" mbr-text>\n                               Sviluppatore\n                        </small>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"mbr-testimonial p-3 align-center col-12 col-md-6\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\" mbr-if=\"TestimonialsCount>4\">\n                <div class=\"panel-item p-3\">\n                    <div class=\"card-block\">\n                        <div class=\"testimonial-photo\" mbr-if=\"showImages\">\n                            <img src=\"../_images/face2.jpg\">\n                        </div>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, aspernatur, voluptatibus, atque, tempore molestiae.\n                        </p>\n                    </div>\n                    <div class=\"card-footer\">\n                        <div class=\"mbr-author-name mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".mbr-author-name\" mbr-text>\n                             John Smith\n                        </div>\n                        <small class=\"mbr-author-desc mbr-italic mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showBio\" data-app-selector=\".mbr-author-desc\" mbr-text>\n                               Sviluppatore\n                        </small>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"mbr-testimonial p-3 align-center col-12 col-md-6\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\" mbr-if=\"TestimonialsCount>5\">\n                <div class=\"panel-item p-3\">\n                    <div class=\"card-block\">\n                        <div class=\"testimonial-photo\" mbr-if=\"showImages\">\n                            <img src=\"../_images/face2.jpg\">\n                        </div>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, aspernatur, voluptatibus, atque, tempore molestiae.\n                    </p></div>\n                    <div class=\"card-footer\">\n                        <div class=\"mbr-author-name mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".mbr-author-name\" mbr-text>\n                             John Smith\n                        </div>\n                        <small class=\"mbr-author-desc mbr-italic mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showBio\" data-app-selector=\".mbr-author-desc\" mbr-text>\n                               Sviluppatore\n                        </small>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>   \n</section>",
+          "_cid": "rm6TccjEwf",
+          "_anchor": "testimonials1-e",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".line": {
+              "background-color": "@lineColor",
+              "color": "@lineColor",
+              "align": "center",
+              "height": "2px",
+              "margin": "0 auto"
+            },
+            ".section-text": {
+              "padding": "2rem 0"
+            },
+            ".inner-container": {
+              "margin": "0 auto"
+            },
+            "@media (max-width: 768px)": {
+              ".inner-container": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "content10",
+          "_customHTML": "<section class=\"mbr-section article content10\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Larghezza del testo\" name=\"innerWidth\" min=\"50\" max=\"100\" step=\"1\" value=\"66\">\n        <input type=\"range\" inline title=\"Larghezza della linea\" name=\"lineLength\" min=\"10\" max=\"100\" step=\"1\" value=\"25\">\n        <input type=\"color\" title=\"Colore della linea\" name=\"lineColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Colore di sfondo\" name=\"bgColor\" value=\"#2e2e2e\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"inner-container\" mbr-style=\"{'width': innerWidth + '%'}\">\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n            <div class=\"section-text align-center mbr-white mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".section-text\" mbr-text>\n                    Dieta, stress, cambiamenti di stagione, cambiamenti ormonali, alcuni farmaci e anche alcune malattie, causano la perdita dei capelli. Annurmets hair grazie all'elevata presenza della Procianidina B2, aiuta a frenare la caduta dei capelli, rivitalizzarli e &nbsp;rinforzarne la ricrescita.&nbsp;</div>\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n        </div>\n    </div>\n</section>",
+          "_cid": "rm70EpEyrh",
+          "_anchor": "content10-f",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "P": {
+              "color": "#767676"
+            },
+            "H1": {
+              "color": "#f50b0b"
+            },
+            ".mbr-text, .mbr-section-btn B": {
+              "color": "#232323"
+            }
+          },
+          "_name": "header16",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Schermo intero\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Mostra titolo\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Mostra sottotitoli\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Mostra Testo\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Mostra pulsanti\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Immagine di sfondo\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Colore di sfondo\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video di sfondo\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Sovrapponi\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Colore sovrapposto\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacità\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"col-md-10 align-center\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    NON PERDERTI QUEST'OFFERTA FINCHÉ DURA!</h1>\n                <h3 class=\"mbr-section-subtitle mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Bellissimi siti web mobile\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>ORDINANDO QUI ANNURMETS HAIR AVRAI DIRITTO AL 40% DI SCONTO<br>FAI PRESTO! <br>L'OFFERTA É VALIDA SOLO PER OGGI E PER 20 PEZZI DISPONIBILI</b></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-black-outline\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">PER SAPERNE DI PIÙ</a>\n                </div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "rm79uxoRJd",
+          "_anchor": "header16-g",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content8",
+          "_customHTML": "<section class=\"mbr-section content8\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"color\" title=\"Colore di sfondo\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row title\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-5\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-secondary\" href=\"index.html#form1-h\" data-app-placeholder=\"Type Text\">LO ORDINO</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rm7bUDxVa6",
+          "_anchor": "content8-i",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".title": {
+              "margin-bottom": "2rem"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            "a:not([href]):not([tabindex])": {
+              "color": "#fff",
+              "border-radius": "3px"
+            },
+            "a.btn-white:not([href]):not([tabindex])": {
+              "color": "#333"
+            },
+            "textarea.form-control": {
+              "min-height": "188px"
+            },
+            "H2": {
+              "color": "#f50b0b"
+            },
+            ".mbr-section-subtitle B": {
+              "color": "#232323"
+            }
+          },
+          "_name": "form1",
+          "_customHTML": "<section class=\"mbr-section form1\" group=\"Forms\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Superiore\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"3\">\n        <input type=\"range\" inline title=\"Inferiore\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Mostra titolo\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Mostra sottotitoli\" name=\"showSubtitle\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Immagine di sfondo\" value=\"@PROJECT_PATH@/assets/images/tutto-apple-1-2000x1111.jpg\" selected>\n            <input type=\"color\" title=\"Colore di sfondo\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Video di sfondo\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Sovrapponi\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Colore sovrapposto\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacità\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"title col-12 col-lg-8\">\n                <h2 mbr-if=\"showTitle\" class=\"mbr-section-title align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\"><b>\n                    COMPILA IL MODULO</b></h2>\n                <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\"><b>\n                    RICEVERAI ANNURMETS HAIR DIRETTAMENTE A CASA CON SPEDIZIONE GRATUITA</b></h3>\n            </div>\n        </div>\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div mbr-form class=\"media-container-column col-lg-8\">\n                <!---Formbuilder Form--->\n                <form action name=\"Mobirise Form\" method=\"POST\" class=\"mbr-form form-with-styler\">\n                    <div class=\"row row-sm-offset\">\n                        <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">Grazie per aver compilato il modulo!</div>\n                        <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\">\n                        </div>\n                    </div>\n                    <div class=\"dragArea row row-sm-offset\">\n                        <div class=\"col-md-4  form-group\" data-for=\"name\">\n                            <label mbr-text mbr-theme-style=\"display-7\" for=\"name\" class=\"form-control-label mbr-fonts-style\">Nome</label>\n                            <input type=\"text\" name=\"name\" data-form-field=\"Name\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\">\n                        </div>\n                        <div class=\"col-md-4  form-group\" data-for=\"email\">\n                            <label mbr-text mbr-theme-style=\"display-7\" for=\"email\" class=\"form-control-label mbr-fonts-style\">Email</label>\n                            <input type=\"email\" name=\"email\" data-form-field=\"Email\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\">\n                        </div>\n                        <div data-for=\"phone\" class=\"col-md-4  form-group\">\n                            <label mbr-text mbr-theme-style=\"display-7\" for=\"phone\" class=\"form-control-label mbr-fonts-style\">Telefono</label>\n                            <input type=\"tel\" name=\"phone\" data-form-field=\"Phone\" mbr-theme-style=\"display-7\" class=\"form-control\">\n                        </div>\n                        <div data-for=\"message\" class=\"col-md-12 form-group\">\n                            <label mbr-text mbr-theme-style=\"display-7\" for=\"message\" class=\"form-control-label mbr-fonts-style\">Messaggio</label>\n                            <textarea name=\"message\" data-form-field=\"Message\" mbr-theme-style=\"display-7\" class=\"form-control\"></textarea>\n                        </div>\n                        <div class=\"col-md-12 input-group-btn align-center\" mbr-buttons=\"true\" mbr-theme-style=\"display-5\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd\"><a type=\"submit\" class=\"btn btn-primary btn-form\" data-app-placeholder=\"Type Text\">INVIA MODULO</a></div>\n                    </div>\n                </form><!---Formbuilder Form--->\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rm7abrc9Ne",
+          "_anchor": "form1-h",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
